@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+<head>
+    <title>Tetris</title>
+    <link rel="icon" href="./../images/tetris.png">
+    <link rel="stylesheet" href="./../CSS/tetris.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <meta charset="UTF-8">            
+</head>    
+<body class="info">
+    <div id="info-container" class="info-container">
+        <div class="title-section">
+            <img src="./../images/tetris.png" alt="" style="width: 50px; height: auto;">
+            <h2>TETRIS: info</h2>
+            <button id="back-button2" class="buttons"><i class="fas fa-arrow-left"></i></button>
+        </div>
+        
+        <p>
+            Il <strong>Tetris</strong> è un videogioco il cui obiettivo è abbinare blocchi geometrici, chiamati Tetrimini, che cadono all'interno di una griglia. 
+            <br>I giocatori devono ruotare e posizionare questi blocchi in modo da creare righe orizzontali senza spazi vuoti. 
+            <br>Quando una riga viene completata, scompare, facendo guadagnare punti al giocatore.
+            <br>Man mano che il gioco avanza, la velocità con cui i blocchi cadono aumenta, rendendo la sfida più impegnativa. 
+            <br>Se i blocchi raggiungono la parte superiore dello schermo e non c'è spazio per nuovi blocchi, il gioco termina.
+            <br>Inoltre, nella homepage è visibile una classifica con due modalità di visualizzazione: 
+            <br>-la modalità <i>punteggio</i> mostra la classifica dei giocatori in base al punteggio massimo che questi hanno raggiunto in una singola partita.
+            <br>-la modalità <i>linee</i> mostra la classifica dei giocatori in base al numero massimo  di linee che questi hanno raggiunto in una singola partita.
+            
+
+        </p>
+                <div class="how-to-play-section">
+                    <h2>Comandi</h2>
+                    <ul class="command-list">
+                        <li><span class="arrow">&larr;</span> <strong>Freccia Sinistra:</strong> Muove il blocco verso sinistra.</li>
+                        <li><span class="arrow">&rarr;</span> <strong>Freccia Destra:</strong> Muove il blocco verso destra.</li>
+                        <li><span class="arrow">&darr;</span> <strong>Freccia Giù:</strong> Accelerazione della discesa del blocco.</li>
+                        <li><span class="arrow">&uarr;</span> <strong>Freccia Su:</strong> Ruota il blocco in senso orario.</li>
+                    </ul>
+                </div>
+                <div class="how-to-play-section">
+                    <h2>Punteggio e livelli:</h2>
+                    <p>Ogni riga completata ti assegna un punteggio base proporzionale al livello attuale. Il tuo punteggio sarà calcolato moltiplicando il punteggio base, derivante dal numero di righe completate, per il livello attuale.</p>
+                    <ul>
+                        <li><strong>1 riga completata:</strong> 40 punti</li>
+                        <li><strong>2 righe contemporanee:</strong> 100 punti</li>
+                        <li><strong>3 righe contemporanee:</strong> 300 punti</li>
+                        <li><strong>4 righe contemporanee (Tetris):</strong> 1200 punti</li>
+                    </ul>
+                    <p>Il tuo livello aumenta ogni 10 righe completate. Ogni nuovo livello comporta una caduta più veloce dei blocchi. Inoltre, quando usi la freccia giù e il blocco si sposta verso il basso, ottieni un punto aggiuntivo nel punteggio.<br>
+                    Inoltre, ogni 100 punti ottenuti in partita, otterrai 1$ da spendere nello shop. Nello shop potrai comprare e selezionare gli stili che caratterizzano i blocchi durante le tue partite di Tetris.
+                    <br>Per provare lo shop, accedere con le credenziali <strong>username: </strong> <i>pweb</i>, <strong>password:</strong> <i>Pweb2024</i> .</p>
+                </div>
+
+    </div>
+    <script>
+        const backButton = document.getElementById('back-button2');
+        backButton.addEventListener('click', () => {
+          window.location.href = './../index.php';
+        });
+      </script>
+</body>
+</html>
